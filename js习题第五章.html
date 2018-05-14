@@ -11,24 +11,75 @@
 //                }
 //                console.log(calc(10));
                 
-                function foo(a){
-                    if(a%3==0 && a%5==0 && a%7==0){
-                        return true;
+//                function foo(a){
+//                    if(a%3==0 && a%5==0 && a%7==0){
+//                        return true;
+//                    }
+//                    return false;
+//                }
+//                var b = [];
+//                for(var i=1; i<1000; i++){
+//                    if(foo(i)){
+//                        b.push(i);
+//                    }
+//                }
+//                for( var p in b){
+//                    document.write(b[p] + '&nbsp');
+//                    if((parseInt(p)+1) % 6 == 0){
+//                        document.write('<br>');
+//                    }
+//                }
+
+
+                //5.3
+//                for(var i=100; i<1000; i++){
+//                    for(var j=2; j<=i-1; j++){
+//                        if(){
+//                            break;
+//                        }
+//                    }
+//                }
+
+
+                //5.7Fibonacci
+                //1 1 2 3 5 8 13  a[n]=a[n-1]+a[n-2]
+                //递归
+                /*function fib1(n) {
+                    if(n == 1 || n == 2){
+                        return 1;
                     }
-                    return false;
+                    return fib(n-1)+fib(n-2);
                 }
-                var b = [];
-                for(var i=1; i<1000; i++){
-                    if(foo(i)){
-                        b.push(i);
+                console.log(fib1(8));*/
+
+                //非递归
+                /*function fib2(n) {
+                    var arr = [1,1];
+                    for(var i=2; i<n; i++){
+                        arr[i] = arr[i-1] + arr[i-2];
                     }
+                    return arr[i-1];
                 }
-                for( var p in b){
-                    document.write(b[p] + '&nbsp');
-                    if((parseInt(p)+1) % 6 == 0){
-                        document.write('<br>');
+                console.log(fib2(8));*/
+
+
+                //5.8
+                /*function getPi(n) {
+                    var Pi = 0
+                    for(var i=1; i<=n; i++){
+                        Pi += 4 * Math.pow(-1,i-1)/(2 * i -1);
                     }
+                    return Pi;
                 }
+                var arr = [100, 500, 1000, 10000];
+                for(var i=0; i<arr.length; i++){
+                    console.log(getPi(arr[i]));
+                }*/
+
+
+                //5.9
+
+
             </script>
         </body>
 </html>
