@@ -48,10 +48,9 @@
                     if(n == 1 || n == 2){
                         return 1;
                     }
-                    return fib(n-1)+fib(n-2);
+                    return fib1(n-1)+fib1(n-2);
                 }
                 console.log(fib1(8));*/
-
                 //非递归
                 /*function fib2(n) {
                     var arr = [1,1];
@@ -78,8 +77,22 @@
 
 
                 //5.9
-
-
+                /*function getRangeRandom(low, high) {
+                    return Math.ceil(Math.random() * (high-low)) + low;
+                }
+                var count = 0;
+                var num = 10000;
+                do{
+                    for(var i=0; i<3; i++){
+                        var res = getRangeRandom(1,9);
+                        if(res == 8){
+                            count++;
+                            break;
+                        }
+                    }
+                    num--;
+                }while(num > 0);
+                console.log(count / 10000);*/
             </script>
         </body>
 </html>
