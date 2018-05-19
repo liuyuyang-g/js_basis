@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+        <style>
+            #img1{
+                width: 800px;
+                position: absolute;
+            }
+            #img2{
+                width: 800px;
+                position: absolute;
+            }
+            #btn1{
+                position: absolute;
+                z-index: 1;
+                left: 700px;
+                top: 210px;
+            }
+            #btn2{
+                position: absolute;
+                z-index: 1;
+                left: 50px;
+                top: 210px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="div1">
+            <button id="btn1">
+                <img src="按钮右.svg" alt="">
+            </button>
+            <button id="btn2">
+                <img src="按钮左.svg" alt="">
+            </button>
+            <img src="PROJECT2017_wp-8_1920x1080.jpg" alt="" id="img1">
+            <img src="PROJECT2017_wp-9_1920x1080.jpg" alt="" id="img2">
+        </div>
+
+
+        <script>
+            var oBtn1 = document.getElementById('btn1');
+            var oBtn2 = document.getElementById('btn2');
+            var oImg2 = document.getElementById('img2');
+            var oImg1 = document.getElementById('img1');
+            oBtn1.onclick = function () {
+                oImg2.style.display = 'block';
+                oImg1.style.display = 'none';
+            };
+            oBtn2.onclick = function () {
+                oImg1.style.display = 'block';
+                oImg2.style.display = 'none';
+            };
+        </script>
+    </body>
+</html>
