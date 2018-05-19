@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+    </head>
+    <body>
+
+
+        <script>
+            /*var i = 0;
+            setInterval(function () {
+                i++;
+                console.log(i);
+            },1000);*/
+
+            var i = 0;
+            function fn(){
+                var st = setTimeout(function () {
+                    console.log(i++);
+                    if(i < 5){
+                        fn();
+                    }else{
+                        clearTimeout(st);
+                    }
+                },500);
+            }
+            fn();
+
+
+        </script>
+    </body>
+</html>
