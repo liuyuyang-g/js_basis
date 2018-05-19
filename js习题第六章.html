@@ -87,6 +87,27 @@
                 }
             }
             document.write(fib(8));*/
+
+
+            //6.8
+            var months = new Array(31,28,31,30,31,30,31,31,30,31,30,31);
+            function isLeapYear(y) {
+                if((y % 4 == 0 && y % 100 != 0) || (y % 400 == 0)){
+                    return true;
+                }
+                return false;
+            }
+            function getDayOfYear(y, m, d) {
+                var num = 0;
+                if(isLeapYear(y)){
+                    months[1] = 29;
+                }
+                for(var i=0; i<m-1; i++){
+                    num += months[i];
+                }
+                return num + d;
+            }
+            console.log(getDayOfYear(2000,2,8));
         </script>
     </body>
 </html>
